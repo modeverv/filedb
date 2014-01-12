@@ -1,0 +1,305 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+
+/* reset */
+* {
+   margin:0;padding:0;
+}
+html,body {
+   font-size:14px;
+   font-family:'Josefin Sans',"ＤＦ細丸ゴシック体","Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",sans-serif;
+   line-height:1.5;
+   color:#fff;
+   overflow-x:hidden;
+   overflow-y:auto;
+   height: 100%;
+   background:#111;
+}
+/* layout */
+header ,footer{
+   width:100%;
+   left:0;
+   position:fixed;
+}
+header{
+   top:0;
+/*   cursor:pointer;*/
+}
+footer {
+   bottom:0;
+   text-align:right;
+}
+#loadergif{
+   display:block;
+   margin:0 auto;
+   margin-top:19%;
+   width:120px;
+   height:200px;
+}
+#wrapper {
+   width:100%;
+   margin:35px 0px 0px 0px;
+}
+#pagination{
+   margin-top:10px;
+   margin-left:10px;
+}   
+#grayout {
+   display:none;
+   opacity:0.7;
+   position:fixed;
+   top:0;
+   z-index:10;
+   background:gray;
+   min-width:100%;
+   min-height:100%;
+}
+#side {
+   width:29%;
+   border-right:1px solid #333;
+   margin:0 0 30px 0;
+   float:left;
+   display:none;
+}
+#pain {
+   width:99%;
+   float:left;
+   margin-top:3em;
+   margin-bottom:3em;
+}
+#popup {
+   position:fixed;
+   bottom:0;
+   left:0;
+   display:block;
+   width:780px;
+   margin:0;padding:0
+}
+
+/* layout 2 */
+img {
+   display:block;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+}
+li {
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+}
+a {
+   text-deeoration:none;
+   color:#333;
+   text-align:center;
+}
+a .highlight {
+   background:lightblue;
+}   
+h1 {
+   padding:0px;
+   margin:0px 0 0 10px;
+   float:left;
+   font-weight:lighter;
+}
+h2 {
+   margin:0 2em 0 2em ;
+   font-weight:lighter;
+}
+h3 {
+   margin:0 0 0 10px;
+   font-weight:lighter;
+}   
+div.search{
+   float:left;
+}
+pre {
+   margin:10px 10px 10px 10px;
+   background:darkblue;
+   color:white;
+   font-family:'Ubuntu Mono', cursive,monospace;
+   padding:10px;
+   border-radius:10px;
+   overflow-x:scroll;
+}   
+#pain span{
+   cursor:pointer;
+   font-size:1.2em;
+}
+#pain span:hover{
+   color:orange;
+}   
+.text_field {
+   background: none repeat scroll 0 0 #fff;
+   border-color: -moz-use-text-color -moz-use-text-color #FFF8E8;
+   border-radius: 4px 4px 4px 4px;
+   border-style: none none solid;
+   border-width: medium medium 2px;
+   box-shadow: 0 3px 3px #706751 inset;
+   color: #111;
+   font-family: Helvetica,Arial,sans-serif;
+   font-size: 18px;
+   margin:0px 5px 0px 10px;
+   padding:8px 4px 1px 4px;
+}
+.submit_button {
+   background: #000;
+   border: 1px solid;
+   border-radius: 4px 4px 4px 4px;
+   box-shadow: 0 1px 1px darkgray inset, 0 1px 1px gray;
+   color: #FFFFFF;
+   cursor: pointer;
+   display: block;
+   font-size: 18px;
+   font-family:'Josefin Sans',"ＤＦ細丸ゴシック体","Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",sans-serif;
+   font-weight: lighter;
+   padding: 6px 8px 3px 8px;
+   margin:0px 25px 0px 0px;
+}
+.submit_button:hover{
+   background:#333;
+   color:cyan;
+}
+header h1 {
+}
+.search{
+   width:100%;
+}   
+#side li{
+   border-bottom:1px solid #333;
+   overflow-x:hidden;
+}
+#side .highlight {
+   background:lightblue;
+   color:#333;
+   cursor:pointer;
+}   
+#side .selected {
+   background:darkorange;
+   color:#333;
+}   
+#pain ul{
+   height:100%;
+   overflow:hidden;
+}   
+#pain li {
+   margin-top:10px;
+}
+#pain li h3 {
+   cursor:pointer;
+}
+#pain li.selected h3{
+   color:yellow;
+}
+#pain img{
+  width:160;
+  height:120;
+  padding:10px;
+  float:left;
+}
+#pain input{
+   display:none;
+}
+#pain .highlight h3{
+   backgrond:lightblue;
+   color:orange;
+}
+pre {
+   display:none;
+}   
+#pain .highlight img{
+   cursor:pointer;
+   background:lightblue;
+}
+#pain .highlight input{
+   display:block;
+}
+#pain .selected input{
+   display:block;
+}
+#pain .selected img{
+   background:darkorange;
+}
+#pain .selected pre{
+   display:block;
+}   
+#exifarea {
+   float:left;
+   margin:15px 0px 15px 0px;
+   z-index:10;
+}
+.photodata {
+   width:270px;
+   height:300px;
+   margin-right:40px;
+}
+.photodata h4 {
+   margin-left:20px;
+}
+.pthodata .tags {
+   width:270px;
+}   
+.photodata .text_field{
+   width:130px;
+   margin-left:20px;
+   margin-right:10px;
+}
+.photodata .submit_button {
+   margin-left:0;marign-right:0;
+   margin-top:7px;
+}   
+#exifarea pre {
+   width:270px;
+   height:140px;
+   display:block ;/*debug*/
+   margin:0 0 0 20px;
+   padding:1em;
+   font-size:0.5em;
+   color:white;
+   background:darkblue;
+   line-height:1.0em;
+   overflow-y:auto;
+   overflow-x:hidden;
+   opacity:0.8;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   color:#fff;
+}
+#imgarea {
+   max-width:400px;
+   max-height:300px;
+   float:left;
+   margin:0 0 0 10px;
+}
+#thumb_m {
+   display:block;
+   color:#ccc;
+/*   background:#333;*/
+   min-height:300px;
+   min-width:400px;
+   font-size:8em;
+}
+#imgarea img{
+   display:block;
+   margin:15px;
+/*   padding:15px;*/
+   opacity:0.8;
+   z-index:20;
+}
+#imgarea a.highlight img{
+   opacity:1;
+}
+footer p {
+   margin:0 20px 0 0;
+}
+.h1_1 {margin:0;padding:0;color:blue;}
+.h1_2 {margin:0;padding:0;color:red;}
+.h1_3 {margin:0;padding:0;color:yellow;}
+.h1_4 {margin:0;padding:0;color:yellow;}
+.h1_5 {margin:0;padding:0;color:green;}
+.h1_6 {margin:0;padding:0;color:red;}
+
+
+
+
